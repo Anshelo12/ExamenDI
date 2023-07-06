@@ -35,79 +35,93 @@
     </nav>
   </header>
 <main>
-  <!-- Botón para abrir el Modal 1 -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
-    Abrir Modal 1
-  </button>
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <!-- Botón para abrir el Modal 1 -->
+      <div class="col-md-6">
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal1">
+          Comprar primer agregado
+        </button>
+      </div>
 
-  <!-- Modal 1 -->
-  <div class="modal fade modal-centered" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Modal 1</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Contenido del Modal 1.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" onclick="showSuccessAlert()">Guardar cambios</button>
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Compra 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Camiseta estampado logo de la empresa
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" onclick="showSuccessAlert('modal1')">Confirmar compra</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Botón para abrir el Modal 2 -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
-    Abrir Modal 2
-  </button>
+    <div class="row justify-content-center mt-4">
+      <!-- Botón para abrir el Modal 2 -->
+      <div class="col-md-6">
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal2">
+          Comprar segundo agregado
+        </button>
+      </div>
 
-  <!-- Modal 2 -->
-  <div class="modal fade modal-centered" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal2Label">Modal 2</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Contenido del Modal 2.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" onclick="showSuccessAlert()">Guardar cambios</button>
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Compra 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estampado de anime en promocion
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" onclick="showSuccessAlert('modal2')">Confirmar compra</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Botón para abrir el Modal 3 -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
-    Abrir Modal 3
-  </button>
+    <div class="row justify-content-center mt-4" style="padding-bottom: 20px;">
+      <!-- Botón para abrir el Modal 3 -->
+      <div class="col-md-6">
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal3">
+          Comprar tercer agregado
+        </button>
+      </div>
 
-  <!-- Modal 3 -->
-  <div class="modal fade modal-centered" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal3Label">Modal 3</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Contenido del Modal 3.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" onclick="showSuccessAlert()">Guardar</button>
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Compra 3</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Camiseta estampado tumbler pareja mickey
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" onclick="showSuccessAlert('modal3')">Confirmar compra</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -134,8 +148,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script>
-    function showSuccessAlert() {
-      alert("Guardado exitoso");
+    function showSuccessAlert(modalId) {
+      alert("Compra exitosa");
+      $("#" + modalId).modal("hide");
     }
   </script>
 </body>
